@@ -49,14 +49,14 @@ print(naslov.lower())
 naslov = naslov.strip()
 print(len(naslov))"""
 
-ime = "luka Colarič" #L.C
+"""ime = "luka Colarič" #L.C
 ime = ime.upper() # LUKA COLARIČ
 spltIme = ime.split()
-print(type(spltIme))
-print(spltIme)
+
 
 ime = spltIme[0][0] #"LUKA"[0]
-pri = spltIme[1][0] #"COLARIČ"         altgr f+g
+pri = spltImeprint(type(spltIme))
+print(spltIme)[1][0] #"COLARIČ"         altgr f+g
 
 print(ime, pri)
-print(f"{ime}.{pri}")
+print(f"{ime}.{pri}")"""
