@@ -19,9 +19,11 @@ def briši (s:list):
     print()    
 
 def posodobi (s:list):
-    pass
-
-
+    stara = input("posodobi:")
+    nova = input("Novo: ")
+    for index in range(len(s)):
+        if stara == s[index]:
+            s[index] = nova
 
 if __name__=="__main__":
     s = []
