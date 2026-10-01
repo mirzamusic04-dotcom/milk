@@ -60,3 +60,11 @@ print(spltIme)[1][0] #"COLARIČ"         altgr f+g
 
 print(ime, pri)
 print(f"{ime}.{pri}")"""
+
+import requests #pip instal requests
+url ="https://api.open-meteo.com/v1/forecast?latitude=46.0833&longitude=15&current=temperature_2m&timezone=Europe%2FBerlin" 
+
+klic = requests.get(url)
+klicJSON = klic.json()
+print(klicJSON["latitude"])
+#izpiši temperature_2m
