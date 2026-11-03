@@ -18,7 +18,7 @@ for valuta, tecaj in tecaji.items():
 
 print("Skupaj valut:", len(tecaji))
 """
-'''
+"""
 import requests
 
 url = requests.get("https://api.frankfurter.dev/v1/latest").json()
@@ -49,11 +49,12 @@ else:
     print(evri, "EUR =", round(tuje, 2), valuta)
     nazaj = v_evre(tuje, valuta, tecaji)
     print(round(tuje, 2), valuta, "=", round(nazaj, 2), "EUR")
-'''
-'''
+"""
+"""
 import requests
 
-url = "https://api.frankfurter.dev/v1/2026-09-01..2026-09-07"
+url = "https://api.frankfurter.dev/v" \
+"1/2026-09-01..2026-09-07"
 podatki = requests.get(url, params={"symbols": "JPY"}).json()
 dnevi = podatki["rates"]          # datum -> {"USD": tečaj}
 
@@ -74,8 +75,8 @@ for i in range(1, len(datumi)):
     print(datumi[i] + ":", danes, "(" + smer + ")")
 
 print("Podatki od", datumi[0], "do", datumi[-1] + ", skupaj", len(datumi), "dni")
-'''
-'''
+"""
+"""
 import requests
 
 valute = ["USD", "GBP", "CHF"]
@@ -91,8 +92,8 @@ for a in valute:              # iz katere valute
 
         tecaj = tecaji[b] / tecaji[a]   # oba sta glede na EUR, zato ju delimo
         print("1", a, "=", round(tecaj, 4), b)
+"""
 '''
-
 import requests
 
 url = "https://api.frankfurter.dev/v1/2026-09-01..2026-09-30"
@@ -134,3 +135,4 @@ print("Najslabši dan:", najslabsi, "->", round(najmanj, 2), "GBP")
 print("Razlika:", round(najvec - najmanj, 2), "GBP")
 print("Povprečni tečaj:", round(povprecje, 4))
 print("Dni nad povprečjem:", nad, "od", len(dnevi))
+'''
