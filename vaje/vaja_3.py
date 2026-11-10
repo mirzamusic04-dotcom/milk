@@ -31,7 +31,19 @@ def pizza_za_razred():
 
 #pizza_za_razred()
 
-def kino_cene():
-    int(input("Starost: "))
-    int(input("Dan: "))
-    
+def kino_cena():
+    starost = int(input("Starost: "))
+    #dan = str(input("Dan: "))
+    cena = 0 + starost
+    if starost < 6:
+        cena == 0
+    elif starost < 18:
+        cena == 5
+    elif starost < 65:
+        cena == 8
+    else:
+        cena == 6
+
+
+
+kino_cena()
