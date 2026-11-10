@@ -34,15 +34,14 @@ def pizza_za_razred():
 def kino_cena():
     starost = int(input("Starost: "))
     #dan = str(input("Dan: "))
-    cena = 0 + starost
     if starost < 6:
-        cena == 0
+        cena = 0
     elif starost < 18:
-        cena == 5
+        cena = 5
     elif starost < 65:
-        cena == 8
+        cena = 8
     else:
-        cena == 6
+        cena = 6
 
 
 
